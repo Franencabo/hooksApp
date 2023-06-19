@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const useForm = (intialForm = {}) => {
   const [formState, setFormState] = useState(intialForm);
@@ -22,10 +22,6 @@ export const useForm = (intialForm = {}) => {
 
     return name != "" && email != "" && password != "" && regex.test(email);
   };
-
-  useEffect(() => {
-    console.log("formState", formState);
-  }, [formState]);
 
   return {
     ...formState,
