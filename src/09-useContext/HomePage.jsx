@@ -11,9 +11,7 @@ export const HomePage = () => {
 
             <h2>{JSON.stringify(user?.name)}</h2>
 
-            <button className="btn btn-primary">
-                Establecer usuario
-            </button>
+          
         </>
     )
 }
