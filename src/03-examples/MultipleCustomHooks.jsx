@@ -8,7 +8,6 @@ export const MultipleCustomHooks = () => {
     const { data, isLoading } = useFetch(`https://rickandmortyapi.com/api/location/${counter}`);
     const { name, type } = !!data && data;
 
-    console.log(data);
     return (
         <>
             <h1>Rick & Morty</h1>
