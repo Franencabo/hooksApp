@@ -5,10 +5,7 @@ import { City, LoadingQuote } from ".";
 export const MultipleCustomHooks = () => {
 
     const { counter, increment } = useCounter(1);
-
     const { data, isLoading } = useFetch(`https://rickandmortyapi.com/api/location/${counter}`);
-
-
     const { name, type } = !!data && data;
 
     console.log(data);
